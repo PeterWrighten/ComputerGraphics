@@ -8,9 +8,12 @@ This　Repo would Almost　Be Based on the Following Contents:
 ## Programming Assignment
 |Assignment|Solution|
 |:--:|:--:| 
-|[DrawSVG](http://462cmu.github.io/asst1_drawsvg/)|[DS]()|
-|[MeshEdit](http://462cmu.github.io/asst2_meshedit/)|[ME]()|
-|[PathTracer](http://462cmu.github.io/asst3_pathtracer/)|[PT]()|
-|[Animation](http://462cmu.github.io/asst4_animation/)|[AN]()|
-|[Go Further](http://462cmu.github.io/asst5_gofurther/)|[GF]()|
+|[DrawSVG](http://462cmu.github.io/asst1_drawsvg/)|[DS](https://github.com/PeterWrighten/Computer_Graphics/tree/main/asst1_drawsvg)|
+|[MeshEdit](http://462cmu.github.io/asst2_meshedit/)|[ME](https://github.com/PeterWrighten/Computer_Graphics/tree/main/asst2_meshedit)|
+|[PathTracer](http://462cmu.github.io/asst3_pathtracer/)|[PT](https://github.com/PeterWrighten/Computer_Graphics/tree/main/asst3_pathtracer)|
+|[Animation](http://462cmu.github.io/asst4_animation/)|[AN](https://github.com/PeterWrighten/Computer_Graphics/tree/main/asst4_animation)|
+|[Go Further](http://462cmu.github.io/asst5_gofurther/)|[GF](https://github.com/PeterWrighten/Computer_Graphics/tree/main/asst5_gofurther)|
+
+## Lecture Notes
+
 
