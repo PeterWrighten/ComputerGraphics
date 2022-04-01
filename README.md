@@ -16,4 +16,8 @@ This　Repo would Almost　Be Based on the Following Contents:
 
 ## Lecture Notes
 
+[Prerequisites](./raytracer/README.md)
+
+[Notes](./Lecture.md)
+
 
