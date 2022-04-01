@@ -7,6 +7,7 @@
 #include<iostream>
 
 using std::sqrt;
+using std::fabs;
 
 class vec3 {
     public:
@@ -51,8 +52,33 @@ class vec3 {
         }
 };
 
+// type alias
 using point3 = vec3; // 3D point
 using color = vec3; // RGB color
 
+// vec3 utility functions
+inline std::ostream& operator<<(std::ostream &out, const vec3 &v) {
+    return out << v.e[0] << ' ' << v.e[1] << ' ' << v.e[2];
+}
+
+inline vec3 operator+(const vec3 &u, const vec3 &v) {
+    return vec3(u.e[0] + v.e[0], u.e[1] + v.e[1], u.e[2] + v.e[2]);
+}
+
+inline vec3 operator-(const vec3 &u, const vec3 &v) {
+    return vec3(u.e[0] - v.e[0], u.e[1] - v.e[1], u.e[2] - v.e[2]);
+}
+
+inline vec3 operator*(const vec3 &u, const vec3&v) {
+    return vec3(u.e[0] * v.e[0], u.e[1] * v.e[1], u.e[2] * v.e[2]);
+}
+
+inline vec3 operator*(const vec3 &u, double t) {
+    return vec3(u.e[0] * t, u.e[1] * t, u.e[2] * t);
+}
+
+inline vec3 operator/(const vec3 &u, double t) {
+    return u * (1/t);
+}
 
 #endif
