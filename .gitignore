@@ -2,3 +2,5 @@
 **/.vscode
 **/.idea
 **/*.exe
+**/a.out
+**/*.gch

@@ -13,3 +13,10 @@
 *A*: ray origin
 
 *b*: ray direction
+
+- Set Camera
+
+## Adding a Sphere
+
+- Ray-Sphere Intersection
+
