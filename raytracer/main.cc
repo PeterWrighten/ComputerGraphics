@@ -25,7 +25,8 @@ color ray_color(const ray &r) { //simple camera
         return color(N.x() + 1, N.y() + 1, N.z() + 1) * 0.5;
     }
     vec3 unit_direction = unit_vector(r.direction());
-    return color(1.0, 1.0, 1.0) * (1 - t) + color(0.5, 0.7, 1.0) * t;
+    t = 0.5 * (unit_direction.y() + 1.0);
+    return color(1.0, 1.0, 1.0) * (1.0 - t) + color(0.5, 0.7, 1.0) * t;
 }
 
 int main() {
