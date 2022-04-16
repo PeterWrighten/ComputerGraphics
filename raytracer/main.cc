@@ -1,11 +1,11 @@
-#include "color.h"
-#include "vec3.h"
-#include "ray.h"
+#include "color.hpp"
+#include "vec3.hpp"
+#include "ray.hpp"
 
 #include<iostream>
 using namespace std;
 
-bool hit_sphere(const point3& center, double radius, const ray& r) {
+double hit_sphere(const point3& center, double radius, const ray& r) {
     vec3 oc = r.origin() - center;
     auto a = dot(r.direction(), r.direction());
     auto b = 2.0 * dot(oc, r.direction());
@@ -25,6 +25,7 @@ color ray_color(const ray &r) { //simple camera
         return color(N.x() + 1, N.y() + 1, N.z() + 1) * 0.5;
     }
     vec3 unit_direction = unit_vector(r.direction());
+    t = (unit_direction.y() + 1.0) * 0.5;
     return color(1.0, 1.0, 1.0) * (1 - t) + color(0.5, 0.7, 1.0) * t;
 }
 
