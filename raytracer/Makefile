@@ -1,12 +1,11 @@
-OBJS = color.o ray.o vec3.o
+OBJS = color.h ray.h vec3.h
 
 
-peray: main.o $(OBJS) vec3.h ray.h color.h 
-	g++ -std=c++14 main.o $(OBJS) -o $@
+peray: main.cc $(OBJS)
+	g++ -std=c++17 main.cc -o $@
 
 
 clean:
 	rm *.gch
 	rm *.o
 
-.PHONY clean
