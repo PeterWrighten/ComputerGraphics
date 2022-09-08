@@ -8,4 +8,4 @@ peray: main.cc $(OBJS)
 clean:
 	rm *.gch
 	rm *.o
-
+	
